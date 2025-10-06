@@ -31,7 +31,7 @@ html {
 }
 
 body {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: var(--dark);
     background-color: var(--light);
@@ -51,7 +51,7 @@ body.dark-mode {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     line-height: 1.3;
 }
@@ -83,12 +83,12 @@ img {
     display: inline-block;
     padding: 12px 28px;
     border-radius: 4px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
     transition: var(--transition);
     border: none;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .primary-btn {
@@ -543,7 +543,7 @@ body.dark-mode .contact-item p {
     padding: 12px 15px;
     border: 1px solid var(--light-gray);
     border-radius: 4px;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     transition: var(--transition);
     background-color: white;
