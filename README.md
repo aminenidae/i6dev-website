@@ -13,6 +13,8 @@ This repository contains the source code for the i6 Development website, showcas
 - **Interactive Elements**: Smooth animations and transitions for enhanced user experience
 - **Mobile Navigation**: Hamburger menu for easy navigation on mobile devices
 - **Contact Form**: Simple contact form for client inquiries
+- **Dark Mode**: Toggle between light and dark themes based on user preference
+- **Tech-Style Fonts**: Sleek "Orbitron" and "Exo 2" fonts for a modern tech feel
 - **Performance Optimized**: Fast loading times and efficient code
 
 ## Technologies Used
@@ -20,7 +22,7 @@ This repository contains the source code for the i6 Development website, showcas
 - **HTML5**: Semantic markup for better SEO and accessibility
 - **CSS3**: Custom styling with modern layout techniques (Flexbox, Grid)
 - **JavaScript**: Client-side interactivity and DOM manipulation
-- **Google Fonts**: Poppins and Roboto for professional typography
+- **Google Fonts**: Orbitron and Exo 2 for tech-inspired typography
 - **Font Awesome**: Icons for visual enhancement
 - **CSS Variables**: For consistent theming and easy maintenance
 
@@ -28,10 +30,11 @@ This repository contains the source code for the i6 Development website, showcas
 
 1. **Hero**: Eye-catching introduction with call-to-action buttons
 2. **About**: Company information and key statistics
-3. **Services**: Overview of our development services
-4. **Portfolio**: Showcase of our recent projects
-5. **Contact**: Contact form and company information
-6. **Footer**: Additional navigation and social links
+3. **Services**: Overview of our development services (App, Software, and Web Development)
+4. **Contact**: Contact form and company information
+5. **Footer**: Additional navigation and social links
+
+*Note: Portfolio section and UI/UX Design service have been temporarily removed as requested.*
 
 ## Getting Started
 
