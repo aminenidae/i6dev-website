@@ -108,39 +108,9 @@ window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     if (window.scrollY > 100) {
         header.style.padding = '0.5rem 0';
-        header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+        header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
     } else {
         header.style.padding = '1rem 0';
-        header.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
-    }
-});
-
-// Dark Mode Toggle
-const darkModeToggle = document.getElementById('darkModeToggle');
-const body = document.body;
-
-// Check for saved theme preference or respect OS preference
-const savedTheme = localStorage.getItem('theme');
-const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-
-// Apply saved theme or OS preference
-if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme.matches)) {
-    body.classList.add('dark-mode');
-    darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-} else {
-    darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-}
-
-// Toggle dark mode
-darkModeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    
-    // Update button icon
-    if (body.classList.contains('dark-mode')) {
-        darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-        localStorage.setItem('theme', 'dark');
-    } else {
-        darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-        localStorage.setItem('theme', 'light');
+        header.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.3)';
     }
 });
