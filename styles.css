@@ -272,12 +272,12 @@ body.dark-mode .burger div {
     padding: 10rem 0 5rem;
     position: relative;
     overflow: hidden;
-    background-color: rgba(248, 250, 252, 0.7);
-    backdrop-filter: blur(3px);
+    background-color: rgba(248, 250, 252, 0.5);
+    backdrop-filter: blur(2px);
 }
 
 body.dark-mode .hero {
-    background-color: rgba(15, 23, 42, 0.7);
+    background-color: rgba(15, 23, 42, 0.5);
 }
 
 .hero::before {
@@ -333,13 +333,13 @@ body.dark-mode .hero p {
 /* ===== About Section ===== */
 .about {
     padding: 6rem 0;
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
     position: relative;
 }
 
 body.dark-mode .about {
-    background-color: rgba(15, 23, 42, 0.7);
+    background-color: rgba(15, 23, 42, 0.5);
 }
 
 .about-content {
@@ -408,14 +408,14 @@ body.dark-mode .stat-item p {
 /* ===== Services Section ===== */
 .services {
     padding: 6rem 0;
-    background-color: rgba(248, 250, 252, 0.7);
+    background-color: rgba(248, 250, 252, 0.5);
     position: relative;
     overflow: hidden;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
 }
 
 body.dark-mode .services {
-    background-color: rgba(30, 41, 59, 0.7);
+    background-color: rgba(30, 41, 59, 0.5);
 }
 
 .services::before {
@@ -442,21 +442,21 @@ body.dark-mode .services {
 }
 
 .service-card {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     padding: 2rem;
     text-align: center;
     box-shadow: var(--shadow);
     transition: var(--transition);
-    backdrop-filter: blur(3px);
-    border: 1px solid rgba(226, 232, 240, 0.5);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(226, 232, 240, 0.3);
 }
 
 body.dark-mode .service-card {
-    background: rgba(30, 41, 59, 0.7);
+    background: rgba(30, 41, 59, 0.5);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(3px);
-    border: 1px solid rgba(30, 41, 59, 0.5);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(30, 41, 59, 0.3);
 }
 
 .service-card:hover {
@@ -507,14 +507,14 @@ body.dark-mode .service-card p {
 /* ===== Contact Section ===== */
 .contact {
     padding: 6rem 0;
-    background-color: rgba(248, 250, 252, 0.7);
+    background-color: rgba(248, 250, 252, 0.5);
     position: relative;
     overflow: hidden;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
 }
 
 body.dark-mode .contact {
-    background-color: rgba(15, 23, 42, 0.7);
+    background-color: rgba(15, 23, 42, 0.5);
 }
 
 .contact-wrapper {
@@ -592,17 +592,17 @@ body.dark-mode .contact-item p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     transition: var(--transition);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
     color: var(--dark);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
 }
 
 body.dark-mode .contact-form input,
 body.dark-mode .contact-form textarea {
     border: 1px solid var(--dark-border);
-    background-color: rgba(30, 41, 59, 0.7);
+    background-color: rgba(30, 41, 59, 0.5);
     color: var(--dark-text);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
 }
 
 .contact-form input:focus,
@@ -623,14 +623,14 @@ body.dark-mode .contact-form textarea:focus {
 
 /* ===== Footer ===== */
 footer {
-    background-color: rgba(30, 41, 59, 0.8);
+    background-color: rgba(30, 41, 59, 0.6);
     color: white;
     padding: 4rem 0 2rem;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
 }
 
 body.dark-mode footer {
-    background-color: rgba(15, 23, 42, 0.8);
+    background-color: rgba(15, 23, 42, 0.6);
 }
 
 .footer-content {
