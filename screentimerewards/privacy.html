@@ -27,36 +27,113 @@
         <div class="container">
             <div class="content-block">
                 <h1>Privacy Policy</h1>
-                <p>Last Updated: October 28, 2025</p>
+                <p><strong>Last Updated:</strong> December 28, 2025</p>
 
-                <p>At ScreenTime Rewards, we believe your family's data belongs to you. We built our app using Apple's latest privacy-preserving technologies to ensure that we never see or store your personal usage data.</p>
+                <h2>Introduction</h2>
+                <p>ScreenTime Rewards ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, and protect information when you use the ScreenTime Rewards mobile application ("the App").</p>
+                <p><strong>By using the App, you agree to the collection and use of information in accordance with this Privacy Policy.</strong></p>
 
-                <h2>1. Screen Time Data & Privacy</h2>
-                <p>Our app utilizes Apple's <strong>Screen Time API</strong> (Family Controls, Device Activity, and Managed Settings frameworks) to monitor app usage and apply restrictions.</p>
+                <h2>Information We Collect</h2>
+
+                <h3>1. Information You Provide Directly</h3>
+                <p><strong>Parent Account Information:</strong></p>
                 <ul>
-                    <li><strong>On-Device Processing:</strong> All calculations regarding how much time your child spends on apps happen directly on their device.</li>
-                    <li><strong>No Surveillance:</strong> We (the developers) cannot see which specific apps your child is using, nor do we track their browsing history. The Apple framework hides specific app names and bundle IDs from us to protect your privacy.</li>
-                    <li><strong>CloudKit Sync:</strong> Configuration data (like which apps are "Learning" vs "Reward") and usage summaries are synced between parent and child devices using your personal, private <strong>iCloud</strong> container. We do not have access to this data.</li>
+                    <li>Parent name (optional, for display purposes)</li>
+                    <li>Device pairing codes (temporary, for QR code authentication)</li>
+                    <li>PIN code (stored locally on your device, encrypted)</li>
+                    <li>Custom app names and configurations</li>
                 </ul>
 
-                <h2>2. Data Collection</h2>
-                <p>We do not collect, sell, or share personal data. The app functions without creating a separate user account with us. Authentication is handled entirely through your Apple ID and iCloud.</p>
-
-                <h2>3. Children's Privacy</h2>
-                <p>This app is designed for use by families and children. We comply with COPPA and GDPR-K regulations by ensuring that no personally identifiable information (PII) is collected from children by our servers.</p>
-
-                <h2>4. Subscription Data</h2>
-                <p>Subscriptions are managed by Apple via the App Store. We receive anonymous receipts to validate your "Individual" or "Family" plan status, but we do not receive your payment details or billing address.</p>
-
-                <h2>5. Account Deletion</h2>
-                <p>Since we do not create user accounts on our servers, there is no account to delete with us. To remove all data:</p>
+                <p><strong>Child Account Information:</strong></p>
                 <ul>
-                    <li>Delete the app from your devices.</li>
-                    <li>Go to iOS Settings > Apple ID > iCloud > Manage Storage, and delete the data container for ScreenTime Rewards if you wish to remove synced settings.</li>
+                    <li>Child name or nickname (you choose what to enter)</li>
+                    <li>Device identifier (for pairing purposes)</li>
+                    <li>Avatar customization preferences</li>
                 </ul>
 
-                <h2>6. Contact Us</h2>
-                <p>If you have questions about privacy, please contact us at <a href="mailto:support@i6dev.ca">support@i6dev.ca</a>.</p>
+                <p><strong>Important: We do NOT require:</strong></p>
+                <ul>
+                    <li>Email addresses</li>
+                    <li>Phone numbers</li>
+                    <li>Passwords (authentication via Apple Family Controls and local PIN)</li>
+                    <li>Payment information (handled entirely by Apple)</li>
+                </ul>
+
+                <h3>2. Automatically Collected Information</h3>
+                <p><strong>Screen Time Data:</strong></p>
+                <ul>
+                    <li>Educational app usage duration (which apps, how long used)</li>
+                    <li>Reward app usage duration</li>
+                    <li>Daily usage statistics</li>
+                    <li>App categories (learning vs. reward apps)</li>
+                    <li>Device screen time authorization status</li>
+                </ul>
+
+                <p><strong>Device Information:</strong></p>
+                <ul>
+                    <li>Device type (iPhone or iPad)</li>
+                    <li>iOS version</li>
+                    <li>App version</li>
+                    <li>Device timezone (for accurate daily tracking)</li>
+                    <li>iCloud account identifier (anonymous, for CloudKit sync)</li>
+                </ul>
+
+                <h3>3. Information We Do NOT Collect</h3>
+                <p>We explicitly do NOT collect:</p>
+                <ul>
+                    <li>Browsing history</li>
+                    <li>Location data</li>
+                    <li>Contact lists</li>
+                    <li>Photos or media</li>
+                    <li>Emails or messages</li>
+                    <li>Financial information</li>
+                    <li>Social media data</li>
+                    <li>Advertising identifiers</li>
+                    <li>Analytics from third-party trackers</li>
+                </ul>
+
+                <h2>How We Use Your Information</h2>
+                <p>We use the collected information solely for the following purposes:</p>
+
+                <h3>App Functionality</h3>
+                <ul>
+                    <li><strong>Pairing Devices:</strong> To establish secure connections between parent and child devices</li>
+                    <li><strong>Tracking Progress:</strong> To monitor educational app usage and calculate earned rewards</li>
+                    <li><strong>CloudKit Sync:</strong> To synchronize data across your family's devices via your private iCloud container</li>
+                    <li><strong>Challenge System:</strong> To track challenge progress and reward achievements</li>
+                    <li><strong>Avatar System:</strong> To personalize the child's experience</li>
+                </ul>
+
+                <h2>How We Store and Protect Your Information</h2>
+
+                <h3>Data Storage</h3>
+                <p><strong>iCloud Private Container:</strong></p>
+                <ul>
+                    <li>ALL screen time data, challenges, and configurations are stored in YOUR private iCloud container (<code>iCloud.com.screentimerewards</code>)</li>
+                    <li>This data is associated with YOUR Apple ID</li>
+                    <li>We cannot access this data without your explicit iCloud credentials</li>
+                    <li>Apple controls access, encryption, and security of this data</li>
+                </ul>
+
+                <p><strong>Local Device Storage:</strong></p>
+                <ul>
+                    <li>PIN codes are stored locally on your device using Apple's Keychain (encrypted)</li>
+                    <li>App preferences stored in UserDefaults (non-sensitive settings only)</li>
+                </ul>
+
+                <h2>Children's Privacy (COPPA Compliance)</h2>
+                <p>ScreenTime Rewards is designed for families with children under 13. We take children's privacy seriously and comply with the Children's Online Privacy Protection Act (COPPA).</p>
+
+                <h3>Parental Consent</h3>
+                <ul>
+                    <li><strong>Required:</strong> Parent/guardian must set up the App and authorize child device pairing</li>
+                    <li><strong>Control:</strong> Parents control all settings, data collection, and can delete data at any time</li>
+                </ul>
+
+                <h2>Contact Us</h2>
+                <p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal information:</p>
+                <p><strong>Email:</strong> <a href="mailto:support@i6dev.ca">support@i6dev.ca</a></p>
+                <p><strong>Website:</strong> <a href="https://i6dev.ca/screentimerewards">https://i6dev.ca/screentimerewards</a></p>
             </div>
         </div>
     </section>
