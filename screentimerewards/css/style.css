@@ -17,8 +17,12 @@
     --spacing-regular: 16px;
     
     --max-width: 1200px;
-    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    /* Updated Font Family to Lexend to match App */
+    --font-family: "Lexend", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+
+/* Import Lexend Font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -38,9 +42,10 @@ body {
 /* Typography matching AppTheme hierarchy */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700; /* Bold */
-    letter-spacing: -0.02em;
+    letter-spacing: 0.02em; /* Adjusted for Uppercase */
     margin-bottom: 0.5em;
     color: var(--text-color);
+    text-transform: uppercase; /* Matching App's heavy uppercase usage */
 }
 
 /* Web Hero H1 - larger than app largeTitle for impact, but same weight */
@@ -112,6 +117,8 @@ nav {
     display: flex;
     align-items: center;
     gap: 12px;
+    text-transform: uppercase; /* Logo Text Uppercase */
+    letter-spacing: 0.05em;
 }
 
 .logo img {
@@ -128,20 +135,25 @@ nav {
 
 .nav-links a {
     color: var(--text-color);
-    font-size: 16px; /* AppTheme.body */
-    font-weight: 500;
+    font-size: 14px; /* Slightly smaller for nav */
+    font-weight: 600;
+    text-transform: uppercase; /* Nav Links Uppercase */
+    letter-spacing: 0.05em;
 }
 
 /* Buttons matching AppTheme Primary Action */
 .cta-button {
     background-color: var(--primary-teal);
     color: white !important;
-    padding: 10px 20px;
+    padding: 12px 24px; /* Slightly larger click area */
     border-radius: var(--radius-round);
-    font-weight: 600;
+    font-weight: 700; /* Bold */
+    text-transform: uppercase; /* Buttons Uppercase */
+    letter-spacing: 0.05em;
     /* AppTheme.Shadow.small */
     box-shadow: 0 2px 1px rgba(0,0,0,0.05); 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 14px;
 }
 
 .cta-button:hover {
@@ -161,6 +173,16 @@ nav {
 .hero h1 {
     margin-bottom: 20px;
     color: var(--text-color);
+    text-transform: none; /* Keep Hero H1 natural case for readability, or remove this line to force uppercase */
+}
+
+/* Override H1 in hero to be Mixed Case if desired, but user asked for "capital font". 
+   I will make everything uppercase headers per user request for "capital font in the app". 
+   However, Hero text is often better mixed. I'll force uppercase on headers as requested. 
+*/
+.hero h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
 }
 
 .hero .subtitle {
@@ -168,6 +190,7 @@ nav {
     color: var(--text-secondary);
     max-width: 600px;
     margin: 0 auto 40px;
+    font-weight: 400;
 }
 
 .app-store-badge {
@@ -242,6 +265,7 @@ nav {
     margin-top: 30px;
     margin-bottom: 15px;
     color: var(--primary-teal); /* Branded headers */
+    text-transform: uppercase;
 }
 
 .content-block h3 {
@@ -249,6 +273,7 @@ nav {
     margin-top: 24px;
     margin-bottom: 10px;
     color: var(--text-color);
+    text-transform: uppercase;
 }
 
 .content-block ul, .content-block ol {
@@ -284,6 +309,10 @@ footer {
 
 .footer-links a {
     color: var(--text-secondary);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
 }
 
 .footer-links a:hover {
