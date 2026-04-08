@@ -114,8 +114,8 @@
                 </ul>
                 <p>RevenueCat does not receive your name, email, screen time data, or any personal information. Their privacy policy is available at <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>.</p>
 
-                <h3>Apple CloudKit &amp; iCloud</h3>
-                <p>All screen time data and family configurations are stored in your private iCloud container, governed by Apple's privacy policy. We cannot access this data without your explicit iCloud credentials.</p>
+                <h3>Apple (Payments, CloudKit &amp; iCloud)</h3>
+                <p>All subscription billing and payment information is collected and processed directly by Apple through the App Store. We do not store, access, or process your payment details at any point. All screen time data and family configurations are stored in your private iCloud container, governed by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's privacy policy</a>. We cannot access this data without your explicit iCloud credentials.</p>
 
                 <h3>Apple Screen Time Framework (DeviceActivity)</h3>
                 <p>The App uses Apple's Screen Time API (DeviceActivity framework) to track app usage on child devices. This data never leaves your device or private iCloud container and is not accessible to us.</p>
@@ -140,7 +140,12 @@
                 <h2>Data Retention and Deletion</h2>
 
                 <h3>How Long We Keep Your Data</h3>
-                <p>Screen time data and configurations stored in your iCloud container are retained until you delete them or delete your iCloud account. Local device data is removed when you delete the App.</p>
+                <ul>
+                    <li><strong>Screen time data &amp; configurations (iCloud):</strong> Retained until deleted by the parent or until the iCloud account is closed.</li>
+                    <li><strong>Local device data</strong> (PIN, preferences, daily counters): Removed immediately when the App is deleted from the device.</li>
+                    <li><strong>RevenueCat anonymous ID &amp; subscription events:</strong> Retained per <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat's retention policy</a>. We do not control this data.</li>
+                    <li><strong>Temporary pairing codes:</strong> Discarded immediately after device pairing is complete.</li>
+                </ul>
 
                 <h3>How to Delete Your Data</h3>
                 <p>You can delete your data at any time using the following methods:</p>
@@ -153,11 +158,15 @@
                 <h2>Children's Privacy (COPPA Compliance)</h2>
                 <p>Brain Coinz is designed for families with children under 13. We take children's privacy seriously and comply with the Children's Online Privacy Protection Act (COPPA).</p>
 
+                <h3>Subscriptions and Account Registration</h3>
+                <p>Children under 13 cannot subscribe to or register for Brain Coinz. Only parents or guardians (18+) may create an account and purchase a subscription. Children use the App exclusively on their own device under the parent's active authorization — they do not have independent accounts.</p>
+
                 <h3>Parental Consent</h3>
                 <ul>
                     <li><strong>Required:</strong> A parent or guardian must set up the App on the parent device and explicitly authorize each child device by completing the pairing process (via QR code scan and PIN verification). No child device can be monitored without this active parental authorization.</li>
                     <li><strong>Control:</strong> Parents control all settings, monitored apps, reward thresholds, and can revoke access or delete all data at any time.</li>
                     <li><strong>What we collect from children:</strong> Only the child's nickname (entered by the parent) and screen time usage data on the child's device. This data is stored exclusively in the family's private iCloud container and is not accessible to us.</li>
+                    <li><strong>No advertising or profiling:</strong> We do not use children's data for advertising, profiling, or sale to third parties.</li>
                     <li><strong>Data review and deletion:</strong> Parents can review or delete all data at any time via the App or by contacting <a href="mailto:support@i6dev.ca">support@i6dev.ca</a>.</li>
                 </ul>
 
