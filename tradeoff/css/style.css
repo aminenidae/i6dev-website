@@ -1,0 +1,109 @@
+/* Tradeoff — i6dev.ca/tradeoff. Palette taken from the app icon. */
+:root {
+    --bg: #0E1218;
+    --surface: #161C25;
+    --surface-border: rgba(237, 232, 223, 0.08);
+    --text: #EDE8DF;
+    --text-secondary: rgba(237, 232, 223, 0.68);
+    --sage: #7FA88F;
+    --amber: #D99A55;
+    --radius: 18px;
+    --max-width: 1100px;
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 { color: var(--text); line-height: 1.2; letter-spacing: -0.01em; margin-bottom: 0.5em; }
+h1 { font-size: 3rem; font-weight: 700; }
+h2 { font-size: 1.7rem; font-weight: 700; }
+h3 { font-size: 1.2rem; font-weight: 600; }
+p { margin-bottom: 1.2rem; color: var(--text-secondary); }
+strong { color: var(--text); }
+
+a { color: var(--sage); text-decoration: none; font-weight: 500; }
+a:hover { text-decoration: underline; }
+
+.container { width: 90%; max-width: var(--max-width); margin: 0 auto; }
+
+/* Header */
+header {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(14, 18, 24, 0.9);
+    backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--surface-border);
+}
+nav { display: flex; justify-content: space-between; align-items: center; height: 68px; }
+.logo { display: flex; align-items: center; gap: 12px; color: var(--text); font-weight: 700; font-size: 1.1rem; }
+.logo:hover { text-decoration: none; }
+.logo img { width: 34px; height: 34px; border-radius: 8px; }
+.nav-links { display: flex; gap: 24px; align-items: center; }
+.nav-links a { color: var(--text-secondary); font-size: 0.95rem; }
+.nav-links a.active, .nav-links a:hover { color: var(--text); text-decoration: none; }
+
+.cta-button {
+    display: inline-block;
+    background: var(--sage); color: #0E1218 !important;
+    padding: 10px 22px; border-radius: 999px; font-weight: 600;
+}
+.cta-button:hover { text-decoration: none; opacity: 0.9; }
+
+/* Hero */
+.hero { text-align: center; padding: 90px 0 70px; }
+.hero img.hero-mark { width: 180px; height: 180px; margin-bottom: 32px; }
+.hero h1 span.sage { color: var(--sage); }
+.hero h1 span.amber { color: var(--amber); }
+.hero .subtitle { font-size: 1.25rem; max-width: 620px; margin: 0 auto 36px; }
+.badge-note { font-size: 0.9rem; color: var(--text-secondary); margin-top: 14px; }
+
+/* Features */
+.features { padding: 40px 0 90px; }
+.features h2 { text-align: center; }
+.features-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px; margin-top: 40px;
+}
+.feature-card {
+    background: var(--surface); border: 1px solid var(--surface-border);
+    border-radius: var(--radius); padding: 32px;
+}
+.feature-card .dot { width: 12px; height: 12px; border-radius: 50%; margin-bottom: 18px; }
+.feature-card p { margin-bottom: 0; }
+
+/* Content pages */
+.content-section { padding: 60px 0 100px; }
+.content-section > .container > h1 { text-align: center; margin-bottom: 40px; }
+.content-block {
+    background: var(--surface); border: 1px solid var(--surface-border);
+    border-radius: var(--radius); padding: 56px; margin-bottom: 28px;
+}
+.content-block h1 { margin-bottom: 8px; }
+.content-block h2 { font-size: 1.35rem; margin-top: 36px; margin-bottom: 12px; color: var(--sage); }
+.content-block h3 { margin-top: 22px; margin-bottom: 8px; }
+.content-block ul, .content-block ol { margin: 0 0 20px 22px; }
+.content-block li { margin-bottom: 8px; color: var(--text-secondary); }
+.faq h3 { color: var(--amber); margin-top: 0; }
+
+/* Footer */
+footer { border-top: 1px solid var(--surface-border); padding: 48px 0; font-size: 0.9rem; }
+.footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+.footer-links { display: flex; gap: 22px; flex-wrap: wrap; }
+.footer-links a { color: var(--text-secondary); }
+.copyright { color: var(--text-secondary); margin-top: 32px; text-align: center; font-size: 0.82rem; }
+
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    .nav-links a:not(.cta-button) { display: none; }
+    .content-block { padding: 28px; }
+    .footer-content { flex-direction: column; text-align: center; }
+    .footer-links { justify-content: center; }
+}
