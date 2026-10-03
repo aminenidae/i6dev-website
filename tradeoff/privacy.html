@@ -34,9 +34,9 @@
         <div class="container">
             <div class="content-block">
                 <h1>Privacy Policy</h1>
-                <p><strong>Last updated:</strong> October 1, 2026</p>
+                <p><strong>Last updated:</strong> October 3, 2026</p>
 
-                <p>This policy explains what information the Tradeoff app ("Tradeoff", "the App") handles, published by i6dev.ca ("we", "us"). The short version: <strong>Tradeoff has no account, and the information it uses stays on your iPhone. We do not receive it.</strong></p>
+                <p>This policy explains what information the Tradeoff app ("Tradeoff", "the App") handles, published by i6dev.ca ("we", "us"). The short version: <strong>Tradeoff works fully without an account, and in that case everything stays on your iPhone. If you choose to create a free profile, we store your email address and a summary of your progress so you can get them back.</strong></p>
 
                 <h2>Information stored on your device</h2>
                 <p>To work, the App keeps the following on your iPhone, in storage that only Tradeoff and its built-in extensions can read:</p>
@@ -48,44 +48,71 @@
                     <li><strong>Custom names</strong> you give to apps, and your app preferences such as alert settings.</li>
                     <li><strong>Technical logs</strong> about how tracking is working, used to diagnose problems.</li>
                 </ul>
-                <p>None of this is uploaded to us or to any server we control.</p>
+                <p>If you don't create a profile, none of this is uploaded to us or to any server we control.</p>
+
+                <h2>If you create a profile (optional)</h2>
+                <p>You can create a free profile with <strong>Sign in with Apple</strong> or with a <strong>sign-in link sent to your email</strong>. There are no passwords. A profile saves your progress so you can restore it, and lets us email you. When you have a profile, we store:</p>
+                <ul>
+                    <li><strong>Your email address</strong> and how you signed in. If you use Sign in with Apple and choose "Hide My Email", we only receive Apple's private relay address, never your real one.</li>
+                    <li><strong>A backup of your settings and rules</strong>: earning rates, daily goals and limits, allowed hours and alert preferences. The apps in your rules are stored only as Apple's anonymous tokens; no app names are uploaded. Custom names you give apps are not uploaded.</li>
+                    <li><strong>Your daily record</strong>: for each day, total minutes on productive apps, total minutes on limited apps, and whether you met your goal. Not which apps, and not when during the day.</li>
+                    <li><strong>Your answer to the "time on distracting apps" question</strong>, so Insights can be restored.</li>
+                    <li><strong>Basic account details</strong>: when the profile was created, when the App last saved, and the App version.</li>
+                    <li><strong>Your email choice</strong>: whether you agreed to receive tips and product news, with the exact wording you agreed to and when.</li>
+                    <li><strong>A discount code</strong>, if we sent you one (see below).</li>
+                </ul>
+                <p>We use this information only to restore your progress, to show your record in the App, to send the emails described below, and to answer you when you contact us. We do not sell it, share it for advertising, or combine it with information from other companies.</p>
+
+                <h2>Emails</h2>
+                <ul>
+                    <li><strong>Sign-in emails.</strong> If you sign in by email, we send you a one-time sign-in link.</li>
+                    <li><strong>One-time discount.</strong> If you leave the subscription screen without subscribing and accept our one-time offer, creating a profile gives you a single-use Apple offer code. We show it in the App and email it to you once.</li>
+                    <li><strong>Tips and product news</strong> only if you turn this on. It is off unless you choose it. You can turn it off any time in the App (Profile) or by emailing <a href="mailto:tradeoffapp@i6dev.ca">tradeoffapp@i6dev.ca</a>.</li>
+                </ul>
+                <p>Emails are sent from <strong>tradeoffapp@i6dev.ca</strong>.</p>
 
                 <h2>Information we do not collect</h2>
                 <ul>
-                    <li>Your name, email address, phone number or any account details</li>
+                    <li>Your name, phone number or payment details</li>
+                    <li>Which apps or websites you use, by name</li>
                     <li>What you do inside apps, your messages, photos or contacts</li>
                     <li>Your browsing history</li>
                     <li>Your location</li>
                     <li>Advertising identifiers</li>
                 </ul>
-                <p>The App contains no advertising and no third-party analytics or tracking tools.</p>
+                <p>The App contains no advertising and no third-party analytics or tracking tools, and does not track you across other companies' apps or websites.</p>
 
-                <h2>Apple services the App relies on</h2>
-                <h3>Screen Time</h3>
-                <p>Tradeoff uses Apple's Screen Time frameworks (Family Controls, Device Activity and Managed Settings) to measure time on the apps you choose and to block apps and websites. This processing happens on your device under Apple's control. You can turn off Tradeoff's access at any time in iPhone Settings &rsaquo; Screen Time.</p>
-                <h3>Subscriptions</h3>
-                <p>Tradeoff Premium is sold through the App Store. Apple handles payment and billing. We never see your payment details. The App only receives from Apple whether your subscription is active.</p>
-                <h3>App Store search</h3>
-                <p>If you use "Rename" on an app and search for its name, the text you type is sent to Apple's public App Store search service so the App can suggest matching names and icons. No information about you is attached to that search.</p>
-                <h3>Notifications</h3>
-                <p>Alerts such as "Goal reached" are created on your iPhone. They are not sent through our servers.</p>
+                <h2>Services that process information for us</h2>
+                <h3>Google Firebase</h3>
+                <p>Profiles, sign-in and saved progress are handled by Google Firebase (Firebase Authentication, Cloud Firestore and Cloud Functions), operated by Google LLC on our behalf. The data is stored in the United States. Google may process technical information, such as your IP address, to provide these services securely. Firebase is used only if you create a profile.</p>
+                <h3>IONOS</h3>
+                <p>Discount and other emails we send are delivered through our email provider, IONOS.</p>
+                <h3>Apple</h3>
+                <p><strong>Screen Time:</strong> Tradeoff uses Apple's Screen Time frameworks (Family Controls, Device Activity and Managed Settings) to measure time on the apps you choose and to block apps and websites. This processing happens on your device under Apple's control. You can turn off Tradeoff's access at any time in iPhone Settings &rsaquo; Screen Time.</p>
+                <p><strong>Sign in with Apple:</strong> if you use it, Apple confirms your identity and gives us your email address or a private relay address.</p>
+                <p><strong>Subscriptions:</strong> Tradeoff Premium is sold through the App Store. Apple handles payment and billing. We never see your payment details. The App only receives from Apple whether your subscription is active.</p>
+                <p><strong>App Store search:</strong> if you use "Rename" on an app and search for its name, the text you type is sent to Apple's public App Store search service so the App can suggest matching names and icons. No information about you is attached to that search.</p>
+                <p><strong>Notifications:</strong> alerts such as "Goal reached" are created on your iPhone. They are not sent through our servers.</p>
 
                 <h2>Diagnostic reports you choose to send</h2>
-                <p>The App can export a diagnostic report if you decide to share one with us, for example by email to support. A report contains technical tracking logs and minutes used on your chosen apps, identified only by anonymous IDs. We use it solely to investigate the problem you reported and delete it when it is no longer needed. Nothing is sent unless you choose to send it.</p>
+                <p>The App can export a diagnostic report if you decide to share one with us, for example by email. A report contains technical tracking logs and minutes used on your chosen apps, identified only by anonymous IDs. We use it solely to investigate the problem you reported and delete it when it is no longer needed. Nothing is sent unless you choose to send it.</p>
 
                 <h2>How long information is kept and how to delete it</h2>
                 <ul>
-                    <li>Daily usage history older than about 30 days is removed automatically.</li>
-                    <li>Everything else stays on your iPhone until you delete the App. <strong>Deleting Tradeoff removes all of its data from your device.</strong></li>
-                    <li>To also remove its Screen Time access, go to iPhone Settings &rsaquo; Screen Time.</li>
-                    <li>To ask about a diagnostic report you sent us, email <a href="mailto:tradeoffapp@i6dev.ca">tradeoffapp@i6dev.ca</a>. We answer within 30 days.</li>
+                    <li>On your iPhone, daily usage history older than about 30 days is removed automatically. Everything else stays until you delete the App. <strong>Deleting Tradeoff removes all of its data from your device.</strong></li>
+                    <li>Your profile data is kept while you have a profile. <strong>You can delete your profile at any time in the App (Settings &rsaquo; Account, then Delete Account).</strong> This permanently deletes your profile and saved progress from our servers straight away. If you used Sign in with Apple, it also disconnects Tradeoff from your Apple ID.</li>
+                    <li>Signing out keeps your profile so you can sign back in later; it does not delete it.</li>
+                    <li>Copies of emails we send are deleted automatically within 7 days of sending.</li>
+                    <li>If you received a discount code, we keep a record that the code was used up, so it isn't handed out twice. It is no longer linked to your email once your profile is deleted.</li>
+                    <li>To also remove Tradeoff's Screen Time access, go to iPhone Settings &rsaquo; Screen Time.</li>
+                    <li>You can also ask us to access, correct or delete your information by emailing <a href="mailto:tradeoffapp@i6dev.ca">tradeoffapp@i6dev.ca</a>. We answer within 30 days.</li>
                 </ul>
 
                 <h2>Children</h2>
-                <p>Tradeoff is designed for adults managing their own screen time. It is not directed to children under 13, and we do not knowingly collect personal information from anyone, including children.</p>
+                <p>Tradeoff is designed for adults managing their own screen time. It is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has created a profile, email us and we will delete it.</p>
 
                 <h2>Security</h2>
-                <p>Data stays in the App's private storage on your device, protected by iOS. Because we do not hold your data, there is no account or server of ours that could be breached.</p>
+                <p>On your device, data stays in the App's private storage, protected by iOS. Profile data is sent over encrypted connections and stored in Google Firebase, where access rules let each person read and change only their own profile.</p>
 
                 <h2>Changes to this policy</h2>
                 <p>If we change how the App handles information, we will update this page and the date above before the change takes effect, and mention it in the App Store release notes.</p>
