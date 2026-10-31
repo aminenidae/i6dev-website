@@ -1,5 +1,7 @@
 /* Tradeoff — i6dev.ca/tradeoff. Tokens match the app's "Lit Glass" look (Theme.swift):
-   near-black canvas, white/grey interface, jade = growth, gold = fun. */
+   near-black canvas, white/grey interface, jade = growth, gold = fun.
+   The host sends no cache headers, so phones keep an old copy of this file for days: when you
+   change it, bump ?v= in every page's stylesheet link (index, support, privacy, terms). */
 :root {
     color-scheme: dark;
     --canvas: #050607;
