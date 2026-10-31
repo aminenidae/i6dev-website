@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tradeoff: Earn Your Screen Time</title>
-    <meta name="description" content="Tradeoff helps you trade scrolling time for time well spent. Earn time on the apps you want to use less by first using the ones that matter.">
+    <title>Tradeoff: Same screen time. Better time.</title>
+    <meta name="description" content="Tradeoff changes the mix on your iPhone: time that makes you better, like reading, language learning or study, earns time in the apps you enjoy. Some fun is always yours. More is earned.">
+    <meta name="theme-color" content="#050607">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://i6dev.ca/tradeoff/">
     <meta property="og:title" content="Tradeoff">
-    <meta property="og:description" content="Earn your screen time.">
-    <meta property="og:image" content="https://i6dev.ca/tradeoff/images/app-icon.png">
-    <link rel="icon" href="images/app-icon.png">
+    <meta property="og:description" content="Same screen time. Better time.">
+    <meta property="og:image" content="https://i6dev.ca/tradeoff/images/og.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="images/app-icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,11 +23,11 @@
         <div class="container">
             <nav>
                 <a href="index.html" class="logo">
-                    <img src="images/app-icon.png" alt="Tradeoff app icon">
+                    <img src="images/mark.svg" alt="">
                     Tradeoff
                 </a>
                 <div class="nav-links">
-                    <a href="index.html" class="active">Home</a>
+                    <a href="index.html" class="home-link active">Home</a>
                     <a href="support.html">Support</a>
                     <a href="mailto:tradeoffapp@i6dev.ca" class="cta-button">Contact</a>
                 </div>
@@ -32,55 +37,191 @@
 
     <section class="hero">
         <div class="container">
-            <img class="hero-mark" src="images/hourglass.png" alt="An hourglass: learning, fitness and ideas at the top flow down into video, games and social at the bottom">
-            <h1>Earn your <span class="amber">screen time</span>.<br>Spend it on <span class="sage">what matters</span> first.</h1>
-            <p class="subtitle">Tradeoff locks the apps you want to use less until you've spent time on the ones that are good for you. Read, learn or train first, then scroll with a clear conscience.</p>
-            <p class="badge-note">Coming soon to the App Store for iPhone.</p>
+            <div class="hero-copy">
+                <p class="eyebrow">Tradeoff for iPhone</p>
+                <h1>Same screen time.<br><span class="trade">Better time.</span></h1>
+                <p class="lead">Tradeoff doesn't take your phone away. It changes the mix: time that makes you better, like reading, language learning or study, earns time in the apps you enjoy.</p>
+                <p class="tagline">Some fun is always yours. More is earned.</p>
+                <div class="hero-actions">
+                    <a href="#day" class="button">How a day works</a>
+                    <a href="#plans" class="button secondary">Free and Premium</a>
+                </div>
+                <p class="soon">Coming soon to the App Store</p>
+            </div>
+            <div class="hero-art">
+                <img src="images/hero.jpg" width="900" height="1123" alt="A glass hourglass on dark dunes: jade sand at the top, the time that makes you better, falls into gold sand at the bottom, the fun you earn.">
+            </div>
         </div>
     </section>
 
-    <section class="features">
+    <section class="block">
         <div class="container">
-            <h2>How it works</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="dot" style="background: var(--sage);"></div>
-                    <h3>Set a daily goal</h3>
-                    <p>Choose your productive apps, like reading, learning or fitness, and how many minutes a day unlock your limited apps.</p>
+            <div class="section-head center">
+                <p class="eyebrow">The trade</p>
+                <h2>Better time earns more fun.</h2>
+                <p>Choose your growth apps and your fun apps once. iOS measures the time, so your fun apps unlock on their own.</p>
+            </div>
+            <div class="scenes">
+                <article class="scene">
+                    <img src="images/growth.jpg" width="640" height="640" alt="" loading="lazy">
+                    <div class="scene-body">
+                        <span class="tag jade">Growth</span>
+                        <h3>Time that makes you better</h3>
+                        <p>Reading, language learning, study. Every minute in a growth app earns more fun, at the rate you choose.</p>
+                    </div>
+                </article>
+                <article class="scene">
+                    <img src="images/fun.jpg" width="640" height="640" alt="" loading="lazy">
+                    <div class="scene-body">
+                        <span class="tag gold">Fun</span>
+                        <h3>The apps you enjoy</h3>
+                        <p>Social media, video, games. They share one earned balance, and some fun is yours every day before you earn a minute.</p>
+                    </div>
+                </article>
+                <article class="scene">
+                    <img src="images/health.jpg" width="640" height="640" alt="" loading="lazy">
+                    <div class="scene-body">
+                        <span class="tag jade">Health <span class="plan">· Premium</span></span>
+                        <h3>Growth away from your phone</h3>
+                        <p>Connect Apple Health and your walks, workouts, mindful minutes and time in daylight count as growth too. A night of seven hours or more adds 30 minutes.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="block" id="day">
+        <div class="container">
+            <div class="day">
+                <div class="section-head">
+                    <p class="eyebrow">Your rhythm</p>
+                    <h2>How a day works</h2>
+                    <p>Set it up once. No timers to start and no tasks to tick off: when you've done the time, your fun apps open.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="dot" style="background: var(--amber);"></div>
-                    <h3>Earn, then enjoy</h3>
-                    <p>Reach your goal and your limited apps unlock. Every productive minute earns time on them, and they lock again when it runs out.</p>
+                <ol class="steps">
+                    <li>
+                        <span class="dot gold"></span>
+                        <div>
+                            <h3>Free time</h3>
+                            <p>Your first 30 minutes of fun every day are on us.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="dot jade"></span>
+                        <div>
+                            <h3>Grow first</h3>
+                            <p>After that, your fun apps open once you've spent time in a growth app.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="dot split"></span>
+                        <div>
+                            <h3>Earned time</h3>
+                            <p>Every minute of growth earns more fun, at the rate you choose.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="dot white"></span>
+                        <div>
+                            <h3>Quick checks</h3>
+                            <p>A few short looks a day for anything urgent while your fun apps are locked.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="dot grey"></span>
+                        <div>
+                            <h3>Off-limits</h3>
+                            <p>Optional quiet times for sleep or work, when nothing opens your fun apps.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="block">
+        <div class="container">
+            <div class="section-head center">
+                <h2>Hard to fake. Easy to keep.</h2>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="glyph"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+                    <h3>Measured by iOS</h3>
+                    <p>Tradeoff uses Apple's Screen Time technology to measure the time you actually spend in your growth apps. Nothing to fake.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="dot" style="background: var(--sage);"></div>
-                    <h3>No easy way out</h3>
-                    <p>Stricter rules apply instantly. Easier ones wait until tomorrow, so a weak moment at 11 PM can't undo your limits.</p>
+                <div class="card">
+                    <div class="glyph"><svg viewBox="0 0 24 24"><path d="M3 19h6v-5h6V9h6"/></svg></div>
+                    <h3>Small steps that stick</h3>
+                    <p>Start from the time you spend on your apps today and pick a goal you can keep. Your shift shows the change from your own starting point.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="dot" style="background: var(--amber);"></div>
-                    <h3>Websites too</h3>
-                    <p>Block the website version of your limited apps, or every browser, so Safari isn't a back door.</p>
+                <div class="card">
+                    <div class="glyph"><svg viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></div>
+                    <h3>Built for weaker moments</h3>
+                    <p>Changes to your day start tomorrow, so today keeps the plan you set. An optional daily max caps fun time across all your fun apps.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="dot" style="background: var(--sage);"></div>
+                <div class="card">
+                    <div class="glyph"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+                    <h3>No way around it</h3>
+                    <p>Block the websites of the apps you limit, so they don't just move to Safari. With Premium, hide browsers completely.</p>
+                </div>
+                <div class="card">
+                    <div class="glyph"><svg viewBox="0 0 24 24"><path d="M5 20v-8M12 20V5M19 20v-9"/></svg></div>
+                    <h3>See your real mix</h3>
+                    <p>Insights shows your fun and growth time, day by day, measured by iOS.</p>
+                </div>
+                <div class="card">
+                    <div class="glyph"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
                     <h3>Private by design</h3>
-                    <p>No account needed. Built on Apple's Screen Time framework, and your data stays on your iPhone unless you choose to save your progress. We never see which apps you use.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="dot" style="background: var(--amber);"></div>
-                    <h3>Free to start</h3>
-                    <p>One limited app and one productive app are free forever. Tradeoff Premium unlocks every app, 30-day insights and browser blocking.</p>
+                    <p>Your app activity and Health data stay on your iPhone. Apple doesn't tell us which apps you use. No ads, and nothing is used for tracking.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="block" id="plans">
+        <div class="container">
+            <div class="section-head center">
+                <h2>Free and Premium</h2>
+                <p>Tradeoff is free for one fun app and one growth app, forever.</p>
+            </div>
+            <div class="plans">
+                <div class="plan-card">
+                    <h3>Free</h3>
+                    <p class="plan-note">Forever</p>
+                    <ul>
+                        <li><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>One fun app and one growth app</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Free time, Grow first, earned time and quick checks</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Block the websites of the apps you limit</li>
+                    </ul>
+                </div>
+                <div class="plan-card premium">
+                    <h3>Premium</h3>
+                    <p class="plan-note">Free trial on the yearly plan</p>
+                    <ul>
+                        <li><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Every fun and growth app</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Earning with Apple Health</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>30-day insights</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Hide browsers completely</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="closing">
+        <div class="container">
+            <img class="mark-glow" src="images/mark.svg" width="64" height="91" alt="">
+            <h2>Coming soon to the App Store</h2>
+            <p>Questions or press? Write to us.</p>
+            <a href="mailto:tradeoffapp@i6dev.ca" class="button">tradeoffapp@i6dev.ca</a>
         </div>
     </section>
 
     <footer>
         <div class="container">
             <div class="footer-content">
-                <a href="index.html" class="logo"><img src="images/app-icon.png" alt="">Tradeoff</a>
+                <a href="index.html" class="logo"><img src="images/mark.svg" alt="">Tradeoff</a>
                 <div class="footer-links">
                     <a href="privacy.html">Privacy Policy</a>
                     <a href="terms.html">Terms of Use</a>
