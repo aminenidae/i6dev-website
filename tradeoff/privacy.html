@@ -38,7 +38,7 @@
         <div class="container">
             <div class="content-block">
                 <h1>Privacy Policy</h1>
-                <p><strong>Last updated:</strong> October 25, 2026</p>
+                <p><strong>Last updated:</strong> November 11, 2026</p>
 
                 <p>This policy explains what information the Tradeoff app ("Tradeoff", "the App") handles, published by i6dev.ca ("we", "us"). The short version: <strong>Tradeoff works fully without an account. Your app activity (which apps you use and when) stays on your iPhone. To improve the App, it sends anonymous usage statistics and crash reports that aren't linked to you, and you can turn these off in Settings. If you choose to create a free profile, we store your email address and a summary of your progress so you can get them back. If you connect Apple Health, Tradeoff only reads it, and your Health data never leaves your iPhone.</strong></p>
 
@@ -52,7 +52,7 @@
                     <li><strong>Your app preferences</strong>, such as alert settings and your first name if you type one during setup (it stays on your iPhone).</li>
                     <li><strong>Technical logs</strong> about how tracking is working, used to diagnose problems.</li>
                 </ul>
-                <p>If you don't create a profile, none of this is uploaded to us or to any server we control, except the anonymous usage statistics and crash reports described below.</p>
+                <p>If you don't create a profile, none of this is uploaded to us or to any server we control, except the anonymous usage statistics and crash reports described below, and the friend-code details described under Give a month if you enter a friend's code.</p>
 
                 <h2>Apple Health (optional)</h2>
                 <p>You can connect Apple Health so that time away from your phone counts as growth time. This is optional: Tradeoff works fully without it, and it asks for Health access only when you tap <em>Connect Apple Health</em>, during setup or in the Health tab. Adding Health minutes to your fun time is part of Tradeoff Premium.</p>
@@ -93,10 +93,20 @@
                 </ul>
                 <p>We use this information only to restore your progress, to show your record in the App, to send the emails described below, and to answer you when you contact us. We do not sell it, share it for advertising, or combine it with information from other companies.</p>
 
+                <h2>Give a month: friend codes (optional)</h2>
+                <p>With a free profile, you can share a friend code in Settings &rsaquo; <em>Give a month</em>. A friend who enters it on the subscription screen gets their first month of Tradeoff Premium (monthly plan) free through an Apple offer code, and you get a month of Premium for each friend who starts it, up to 12 a year.</p>
+                <ul>
+                    <li><strong>If you share a code:</strong> we store your code with your profile, how many friends started their month and the Premium months you earned. If your profile has an email address, we email you when a friend joins. Your friend sees only the code, never your name or email, and you never learn who your friends are from us.</li>
+                    <li><strong>If you enter a friend's code</strong> (no profile needed): the App sends the code and a random ID created for this installation of the App to our server, which gives you one Apple offer code. The random ID is not your device's identifier and isn't linked to your name, email or Apple Account. After you redeem the offer, the App sends the ID of that App Store purchase, and our server asks Apple whether it is a friend's month (Apple tells us the product, the type of offer and the purchase date; never your name, Apple Account or payment details). We store the friend code, the random installation ID, the Apple offer code, the purchase ID and when the code was used.</li>
+                    <li><strong>Why:</strong> only to hand out the free months, credit the person who shared, and make sure each purchase counts once. It is never used for advertising.</li>
+                    <li><strong>The share link</strong> opens a small page that shows the code and copies it when you tap to get the App. That page has no analytics and sets no cookies.</li>
+                </ul>
+
                 <h2>Emails</h2>
                 <ul>
                     <li><strong>Sign-in emails.</strong> If you sign in by email, we send you a one-time sign-in link.</li>
                     <li><strong>One-time discount.</strong> If you leave the subscription screen without subscribing and accept our one-time offer, creating a profile gives you a single-use Apple offer code. We show it in the App and email it to you once.</li>
+                    <li><strong>A friend joined.</strong> If you shared a friend code, we email you once for each friend who starts their free month.</li>
                     <li><strong>Tips and product news</strong> only if you turn this on. It is off unless you choose it. You can turn it off any time in the App (Profile) or by emailing <a href="mailto:tradeoffapp@i6dev.ca">tradeoffapp@i6dev.ca</a>.</li>
                 </ul>
                 <p>Emails are sent from <strong>tradeoffapp@i6dev.ca</strong>.</p>
@@ -123,7 +133,7 @@
                 <p><strong>Screen Time:</strong> Tradeoff uses Apple's Screen Time frameworks (Family Controls, Device Activity and Managed Settings) to measure time on the apps you choose and to block apps and websites. This processing happens on your device under Apple's control. You can turn off Tradeoff's access at any time in iPhone Settings &rsaquo; Screen Time.</p>
                 <p><strong>Apple Health:</strong> if you connect it, Tradeoff reads your Health data through Apple's HealthKit framework, on your device, with the permissions you choose. You can change or remove access at any time in the Health app or in iPhone Settings &rsaquo; Privacy &amp; Security &rsaquo; Health.</p>
                 <p><strong>Sign in with Apple:</strong> if you use it, Apple confirms your identity and gives us your email address or a private relay address.</p>
-                <p><strong>Subscriptions:</strong> Tradeoff Premium is sold through the App Store. Apple handles payment and billing. We never see your payment details. The App only receives from Apple whether your subscription is active.</p>
+                <p><strong>Subscriptions:</strong> Tradeoff Premium is sold through the App Store. Apple handles payment and billing. We never see your payment details. The App only receives from Apple whether your subscription is active. For Give a month, our server checks the one purchase made with a friend's offer code through Apple's App Store Server API, as described above.</p>
                 <p><strong>App icons:</strong> if iOS provides an app's public identifier, the App may ask Apple's public App Store lookup service for that app's icon. No information about you is attached to that request.</p>
                 <p><strong>Notifications:</strong> alerts such as "Your fun app is unlocked" are created on your iPhone. They are not sent through our servers.</p>
 
@@ -138,6 +148,7 @@
                     <li>Copies of emails we send are deleted automatically within 7 days of sending.</li>
                     <li>Anonymous usage statistics are kept for up to 14 months, then deleted. Crash reports are kept for up to 90 days. Because they aren't linked to you, we can't find or delete one person's statistics on request; deleting and reinstalling the App starts a new anonymous ID, and you can turn them off at any time in Settings.</li>
                     <li>If you received a discount code, we keep a record that the code was used up, so it isn't handed out twice. It is no longer linked to your email once your profile is deleted.</li>
+                    <li>Records of friend codes that were used (the random installation ID, the Apple offer code and the purchase ID) are kept so a purchase can't be counted twice. When the person who shared deletes their profile, their friend code is deleted too. If you entered a friend's code, you can ask us to delete that record by emailing us.</li>
                     <li>To also remove Tradeoff's Screen Time access, go to iPhone Settings &rsaquo; Screen Time.</li>
                     <li>You can also ask us to access, correct or delete your information by emailing <a href="mailto:tradeoffapp@i6dev.ca">tradeoffapp@i6dev.ca</a>. We answer within 30 days.</li>
                 </ul>
