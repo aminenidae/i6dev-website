@@ -97,8 +97,10 @@ nav { display: flex; justify-content: space-between; align-items: center; height
 .hero .lead { font-size: 1.2rem; max-width: 520px; margin-bottom: 14px; }
 .hero .tagline { font-size: 1.2rem; color: var(--text); font-weight: 500; margin-bottom: 32px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-.soon { display: flex; align-items: center; gap: 10px; margin-top: 28px; font-size: 0.92rem; color: var(--text-tertiary); }
-.soon::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--jade); box-shadow: 0 0 12px var(--glow-jade); }
+/* Apple's "Download on the App Store" badge (official artwork, loaded from Apple; keep its proportions) */
+.store-badge { display: inline-flex; margin-top: 28px; transition: opacity 0.2s; }
+.store-badge:hover { opacity: 0.88; }
+.store-badge img { display: block; height: 54px; width: auto; }
 
 .hero-art img {
     width: 124%; max-width: none; margin: -6% -12%; aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 72%;
@@ -173,6 +175,7 @@ section.block { padding: 88px 0; }
 .closing .mark-glow { width: 64px; height: 91px; margin: 0 auto 32px; filter: drop-shadow(0 0 28px rgba(91, 227, 166, 0.28)) drop-shadow(0 10px 40px rgba(255, 186, 74, 0.22)); }
 .closing h2 { margin-bottom: 14px; }
 .closing p { font-size: 1.1rem; margin-bottom: 28px; }
+.closing .store-badge { margin: 6px 0 40px; }
 
 /* Content pages (support, privacy, terms) */
 .content-section { padding: 64px 0 100px; }
@@ -227,7 +230,7 @@ footer { border-top: 1px solid var(--hairline); padding: 44px 0; font-size: 0.9r
     }
     .hero .lead { margin-left: auto; margin-right: auto; font-size: 1.08rem; }
     .hero .tagline { font-size: 1.08rem; }
-    .hero-actions, .soon { justify-content: center; }
+    .hero-actions { justify-content: center; }
 
     section.block { padding: 64px 0; }
     .scenes, .grid, .plans { grid-template-columns: 1fr; }
