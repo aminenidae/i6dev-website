@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradeoff press kit</title>
+    <meta name="description" content="Press kit for Tradeoff, the iPhone app where time in growth apps earns time in the apps you enjoy: fact sheet, descriptions, screenshots, logos and contact.">
+    <meta name="theme-color" content="#050607">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://i6dev.ca/tradeoff/press">
+    <meta property="og:title" content="Tradeoff press kit">
+    <meta property="og:description" content="Fact sheet, descriptions, screenshots, logos and contact.">
+    <meta property="og:image" content="https://i6dev.ca/tradeoff/images/og.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="images/app-icon.png?v=2" type="image/png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css?v=3">
+    <style>
+        /* Press kit only. Shared tokens and components come from css/style.css. */
+        .kit-hero { padding: 64px 0 24px; }
+        .kit-hero .container { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
+        .kit-hero h1 { margin-bottom: 18px; }
+        .kit-hero .lead { font-size: 1.2rem; max-width: 620px; }
+        .kit-hero .icon { width: 148px; height: 148px; border-radius: 34px; box-shadow: 0 0 0 1px var(--hairline), 0 18px 60px rgba(91, 227, 166, 0.12), 0 18px 60px rgba(255, 186, 74, 0.10); }
+        .kit-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+        .kit-nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 32px; font-size: 0.92rem; }
+        .kit-nav a { color: var(--text-tertiary); text-decoration: none; }
+        .kit-nav a:hover { color: var(--text); }
+
+        section.kit { padding: 56px 0; scroll-margin-top: 72px; }
+        .kit h2 { margin-bottom: 24px; }
+        .kit .intro { max-width: 680px; font-size: 1.05rem; }
+
+        .copy-block { background: var(--surface); border-radius: var(--radius); padding: 32px 36px; margin-bottom: 16px; }
+        .copy-block .eyebrow { margin-bottom: 10px; }
+        .copy-block p { color: var(--text); opacity: 0.9; }
+        .copy-block p:last-child { margin-bottom: 0; }
+
+        .facts { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: var(--radius); overflow: hidden; }
+        .facts th, .facts td { text-align: left; vertical-align: top; padding: 16px 28px; border-top: 1px solid var(--hairline); font-size: 1rem; }
+        .facts tr:first-child th, .facts tr:first-child td { border-top: 0; }
+        .facts th { width: 30%; color: var(--text-tertiary); font-weight: 600; }
+        .facts td { color: var(--text-secondary); }
+
+        .features { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .features li { background: var(--surface); border-radius: var(--radius); padding: 26px 28px; }
+        .features h3 { margin-bottom: 6px; }
+        .features p { margin-bottom: 0; }
+
+        .angle { background: linear-gradient(180deg, rgba(91, 227, 166, 0.07), rgba(91, 227, 166, 0) 60%), var(--surface); box-shadow: inset 0 0 0 1px rgba(91, 227, 166, 0.18); border-radius: var(--radius); padding: 40px; }
+        .angle p { font-size: 1.05rem; }
+        .angle .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 28px 0; }
+        .angle .stat { background: rgba(255, 255, 255, 0.04); border-radius: 16px; padding: 20px; }
+        .angle .stat strong { display: block; font-size: 2rem; line-height: 1; margin-bottom: 8px; letter-spacing: -0.02em; }
+        .angle .stat span { font-size: 0.92rem; color: var(--text-secondary); }
+        .angle .source { font-size: 0.85rem; color: var(--text-tertiary); margin-bottom: 0; }
+
+        .gallery { display: grid; grid-template-columns: repeat(7, 1fr); gap: 16px; }
+        .gallery.store { grid-template-columns: repeat(5, 1fr); }
+        .gallery a { display: block; text-decoration: none; }
+        .gallery img { width: 100%; aspect-ratio: 1179 / 2556; object-fit: cover; border-radius: 18px; background: var(--surface); box-shadow: 0 0 0 1px var(--hairline); transition: transform 0.15s ease; }
+        .gallery.store img { aspect-ratio: 1206 / 2622; }
+        .gallery a:hover img { transform: translateY(-3px); }
+        .gallery span { display: block; margin-top: 10px; font-size: 0.85rem; color: var(--text-tertiary); }
+        .gallery-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin: 40px 0 18px; }
+        .gallery-head:first-of-type { margin-top: 0; }
+        .gallery-head h3 { margin: 0; }
+        .gallery-head p { margin: 0; font-size: 0.92rem; }
+
+        .assets { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        .asset { background: var(--surface); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
+        .asset .art { position: relative; overflow: hidden; height: 220px; display: grid; place-items: center; background: #0A0B0D; }
+        .asset .art img { max-height: 160px; width: auto; }
+        .asset .art img.cover { position: absolute; inset: 0; max-height: none; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+        .asset .body { padding: 22px 24px 24px; }
+        .asset h3 { margin-bottom: 4px; }
+        .asset p { font-size: 0.92rem; margin-bottom: 12px; }
+        .asset a { font-size: 0.95rem; }
+        .fine { font-size: 0.88rem; color: var(--text-tertiary); margin-top: 20px; }
+
+        .maker { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+        @media (max-width: 980px) {
+            .gallery { grid-template-columns: repeat(4, 1fr); }
+            .gallery.store { grid-template-columns: repeat(5, 1fr); }
+        }
+        .maker .copy-block { margin-bottom: 0; }
+
+
+        @media (max-width: 760px) {
+            .kit-hero { padding: 40px 0 8px; }
+            .kit-hero .container { grid-template-columns: 1fr; gap: 24px; }
+            .kit-hero .icon { width: 96px; height: 96px; border-radius: 22px; order: -1; }
+            section.kit { padding: 40px 0; }
+            .copy-block { padding: 24px 22px; }
+            .facts th, .facts td { display: block; width: 100%; padding: 0 22px; border: 0; }
+            .facts th { padding-top: 16px; border-top: 1px solid var(--hairline); }
+            .facts td { padding-bottom: 16px; }
+            .facts tr:first-child th { border-top: 0; }
+            .features, .maker, .assets { grid-template-columns: 1fr; }
+            .features li { padding: 22px; }
+            .angle { padding: 26px 22px; }
+            .angle .stats { grid-template-columns: 1fr; gap: 10px; }
+            .gallery, .gallery.store { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+            .gallery span { font-size: 0.78rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="images/mark.svg" alt="">
+                    Tradeoff
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="home-link">Home</a>
+                    <a href="support.html">Support</a>
+                    <a href="press.html" class="active">Press</a>
+                    <a href="mailto:tradeoffapp@i6dev.ca?subject=Press%3A%20Tradeoff" class="cta-button">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="kit-hero">
+        <div class="container">
+            <div>
+                <p class="eyebrow">Press kit</p>
+                <h1>Tradeoff for iPhone</h1>
+                <p class="lead">An iPhone app for adults where time in growth apps, like reading, language learning, Bible or study, earns time in the apps they enjoy. Everything a writer needs is on this page, free to use in coverage of Tradeoff.</p>
+                <div class="kit-actions">
+                    <a href="presskit/tradeoff-press-kit.zip" class="button" download>Download everything (.zip, 6 MB)</a>
+                    <a href="mailto:tradeoffapp@i6dev.ca?subject=Press%3A%20Tradeoff" class="button secondary">Email us</a>
+                </div>
+                <nav class="kit-nav" aria-label="On this page">
+                    <a href="#about">About</a>
+                    <a href="#facts">Fact sheet</a>
+                    <a href="#how">How it works</a>
+                    <a href="#story">The story</a>
+                    <a href="#screens">Screenshots</a>
+                    <a href="#logos">Logos and art</a>
+                    <a href="#maker">Who makes it</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            <img class="icon" src="presskit/logo/tradeoff-app-icon-1024.png" width="148" height="148" alt="The Tradeoff app icon: a white hourglass with a jade light bulb at the top and a gold play button at the bottom.">
+        </div>
+    </section>
+
+    <section class="kit" id="about">
+        <div class="container">
+            <h2>About Tradeoff</h2>
+            <div class="copy-block">
+                <p class="eyebrow">In one line</p>
+                <p>Tradeoff is a screen time app that doesn't want people off their phones: time in apps that make them better earns time in the apps they enjoy.</p>
+            </div>
+            <div class="copy-block">
+                <p class="eyebrow">Short description · 60 words</p>
+                <p>Tradeoff is an iPhone app for adults that changes the mix of their screen time instead of cutting it. Time in the growth apps they choose, such as reading, language learning, Bible or study, earns time in the fun apps they enjoy. Apple's Screen Time technology measures the minutes on the device, so there is nothing to log and nothing to fake.</p>
+            </div>
+            <div class="copy-block">
+                <p class="eyebrow">Long description · 180 words</p>
+                <p>Most people have apps that would make them better (a reading app, a language course, a Bible plan) downloaded with good intentions and rarely opened. Tradeoff brings those apps back into the day without taking anything away.</p>
+                <p>Users pick their fun apps and their growth apps once, then set a goal that starts from where they are today. Each day begins with some free time in the fun apps. After that, the fun apps open once the day's growth goal is met, and every further minute of growth earns more fun at a rate the user sets. A few quick checks cover anything urgent, and optional Off-limits times keep sleep and work quiet, with a countdown on the Lock Screen.</p>
+                <p>Progress is measured against each person's own starting point, not an ideal: Today's mix shows growth beside fun, and a weekly story shows how the mix moved. With Premium, walks, workouts, mindful minutes, daylight and sleep measured by iPhone or Apple Watch add more fun time through Apple Health.</p>
+                <p>Which apps someone uses never leaves their iPhone, and there are no ads.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="kit" id="facts">
+        <div class="container">
+            <h2>Fact sheet</h2>
+            <table class="facts">
+                <tr><th>Name</th><td>Tradeoff (on the App Store: "Screen Time Control: Tradeoff")</td></tr>
+                <tr><th>Developer</th><td>i6 Development (Ameen, a solo iOS developer in Canada)</td></tr>
+                <tr><th>Release</th><td>23 November 2026 (version 1.1, the first public release)</td></tr>
+                <tr><th>Platforms</th><td>iPhone and iPad, iOS 16 or later</td></tr>
+                <tr><th>Price</th><td>Free download. The free plan covers one fun app and one growth app, with no time limit. Premium (every app, Apple Health, 30-day insights, hiding browsers) is US$7.99 a month or US$59.99 a year, with a 7-day free trial on the yearly plan.</td></tr>
+                <tr><th>Availability</th><td>United States, Canada, United Kingdom, Australia, New Zealand and Singapore · English</td></tr>
+                <tr><th>Built with</th><td>Swift and SwiftUI on Apple's Screen Time frameworks (Family Controls, Device Activity, Managed Settings), HealthKit and Live Activities</td></tr>
+                <tr><th>Privacy</th><td>Works without an account. Which apps someone uses stays on their iPhone, and Health data never leaves it. No ads, no advertising identifiers, no tracking across other companies' apps. <a href="privacy.html">Privacy policy</a></td></tr>
+                <tr><th>Accessibility</th><td>Dynamic Type, Dark Mode and Reduce Motion</td></tr>
+                <tr><th>App Store</th><td><a href="https://apps.apple.com/app/apple-store/id6818019677?pt=128171043&amp;ct=press-kit&amp;mt=8">apps.apple.com/app/id6818019677</a></td></tr>
+                <tr><th>Website</th><td><a href="https://i6dev.ca/tradeoff/">i6dev.ca/tradeoff</a></td></tr>
+                <tr><th>Press contact</th><td><a href="mailto:tradeoffapp@i6dev.ca?subject=Press%3A%20Tradeoff">tradeoffapp@i6dev.ca</a></td></tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="kit" id="how">
+        <div class="container">
+            <h2>How it works</h2>
+            <p class="intro">The words in bold are the names used in the app.</p>
+            <ul class="features">
+                <li>
+                    <h3>Growth apps and fun apps</h3>
+                    <p>Users choose both lists once. iOS measures the time in each, so there are no timers to start and nothing to tick off.</p>
+                </li>
+                <li>
+                    <h3>Free time, then Grow first</h3>
+                    <p>Every day starts with some <strong>free time</strong> in the fun apps. After that, <strong>Grow first</strong>: the fun apps open once the day's growth goal is met.</p>
+                </li>
+                <li>
+                    <h3>Earned time</h3>
+                    <p>Each minute of growth past the goal earns more fun at a rate the user chooses. All fun apps share one balance, which resets at midnight.</p>
+                </li>
+                <li>
+                    <h3>Quick checks and Off-limits</h3>
+                    <p>A few short <strong>quick checks</strong> a day for anything urgent. Optional <strong>Off-limits</strong> times for sleep or work, with a countdown on the Lock Screen and in the Dynamic Island.</p>
+                </li>
+                <li>
+                    <h3>Small steps, measured from the start</h3>
+                    <p><strong>Today's mix</strong> shows growth beside fun, and <strong>Your shift</strong> compares the week with the user's own starting point. A <strong>weekly story</strong> sums up the week every Sunday.</p>
+                </li>
+                <li>
+                    <h3>Apple Health <span style="color: var(--text-tertiary); font-weight: 600;">· Premium</span></h3>
+                    <p>Walks, workouts, mindful minutes, daylight and sleep measured by iPhone, Apple Watch or workout apps add more fun time, within daily caps. Entries typed into Health by hand don't count.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="kit" id="story">
+        <div class="container">
+            <h2>The story</h2>
+            <div class="angle">
+                <p><strong>Most screen time apps treat the phone as the problem. Tradeoff treats the mix as the problem.</strong> People already own the apps they wish they used more, often paid for: the language course, the reading app, the Bible plan. Tradeoff puts those apps first in the day and keeps the fun ones, so the habit grows in small steps instead of a cut that rarely lasts.</p>
+                <div class="stats">
+                    <div class="stat"><strong>53%</strong><span>of US adults say they spend too much time on their smartphone</span></div>
+                    <div class="stat"><strong>45%</strong><span>tried to cut back in the past 12 months</span></div>
+                    <div class="stat"><strong>1 in 4</strong><span>of those who tried say it went extremely or very well</span></div>
+                </div>
+                <p>That fits the New Year: the season of resolutions to read more, learn a language or pray more, and of stories about getting more from the phone people already have.</p>
+                <p class="source">Source: Pew Research Center, "About half of Americans say they spend too much time on their smartphone", 1 September 2026; survey of 9,750 US adults, 26 May – 1 June 2026. <a href="https://www.pewresearch.org/short-reads/2026/09/01/about-half-of-americans-say-they-spend-too-much-time-on-their-smartphone-and-some-are-trying-to-cut-back/">pewresearch.org</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="kit" id="screens">
+        <div class="container">
+            <h2>Screenshots</h2>
+            <p class="intro">Tap any image for the full size. Screens show third-party apps for illustration; their names and icons belong to their owners.</p>
+
+            <div class="gallery-head">
+                <h3>App screens</h3>
+                <p>iPhone, 1179 × 2556, JPG</p>
+            </div>
+            <div class="gallery">
+                <a href="presskit/screens/tradeoff-01-home.jpg"><img src="presskit/thumbs/screen-01-home.jpg" alt="Home: fun time left today, with Today's mix of growth and fun below the hourglass." loading="lazy"><span>Home</span></a>
+                <a href="presskit/screens/tradeoff-02-unlock-card.jpg"><img src="presskit/thumbs/screen-02-unlock-card.jpg" alt="The unlock moment: time in growth apps opens the fun apps." loading="lazy"><span>Fun apps open</span></a>
+                <a href="presskit/screens/tradeoff-03-grow-first.jpg"><img src="presskit/thumbs/screen-03-grow-first.jpg" alt="The Grow first screen shown over a fun app, with quick checks left today." loading="lazy"><span>Grow first</span></a>
+                <a href="presskit/screens/tradeoff-04-fun.jpg"><img src="presskit/thumbs/screen-04-fun.jpg" alt="The Fun tab: fun time today, daily max, free time and quick checks." loading="lazy"><span>Fun</span></a>
+                <a href="presskit/screens/tradeoff-05-growth.jpg"><img src="presskit/thumbs/screen-05-growth.jpg" alt="The Growth tab: growth time today against the goal, and the earning rate." loading="lazy"><span>Growth</span></a>
+                <a href="presskit/screens/tradeoff-06-health.jpg"><img src="presskit/thumbs/screen-06-health.jpg" alt="The Health tab: Health minutes ready to add to fun time." loading="lazy"><span>Health (Premium)</span></a>
+                <a href="presskit/screens/tradeoff-07-insights.jpg"><img src="presskit/thumbs/screen-07-insights.jpg" alt="Insights: Your shift, growth a day compared with the start." loading="lazy"><span>Insights</span></a>
+            </div>
+
+            <div class="gallery-head">
+                <h3>App Store screenshots</h3>
+                <p>iPhone, 1206 × 2622, JPG</p>
+            </div>
+            <div class="gallery store">
+                <a href="presskit/app-store/tradeoff-appstore-01-earn.jpg"><img src="presskit/thumbs/appstore-01-earn.jpg" alt="Earn your fun apps." loading="lazy"><span>Earn</span></a>
+                <a href="presskit/app-store/tradeoff-appstore-02-grow-first.jpg"><img src="presskit/thumbs/appstore-02-grow-first.jpg" alt="Grow first, then have fun." loading="lazy"><span>Grow first</span></a>
+                <a href="presskit/app-store/tradeoff-appstore-03-upgrade.jpg"><img src="presskit/thumbs/appstore-03-upgrade.jpg" alt="Upgrade your screen time." loading="lazy"><span>Upgrade</span></a>
+                <a href="presskit/app-store/tradeoff-appstore-04-set.jpg"><img src="presskit/thumbs/appstore-04-set.jpg" alt="Set rules that fit your day." loading="lazy"><span>Set</span></a>
+                <a href="presskit/app-store/tradeoff-appstore-05-keep.jpg"><img src="presskit/thumbs/appstore-05-keep.jpg" alt="Keep the apps you love." loading="lazy"><span>Keep</span></a>
+                <a href="presskit/app-store/tradeoff-appstore-06-grow.jpg"><img src="presskit/thumbs/appstore-06-grow.jpg" alt="Grow a little every day." loading="lazy"><span>Grow</span></a>
+                <a href="presskit/app-store/tradeoff-appstore-07-walk.jpg"><img src="presskit/thumbs/appstore-07-walk.jpg" alt="Walk for more fun time (Premium)." loading="lazy"><span>Walk</span></a>
+                <a href="presskit/app-store/tradeoff-appstore-08-protect.jpg"><img src="presskit/thumbs/appstore-08-protect.jpg" alt="Protect your sleep &amp; work hours." loading="lazy"><span>Protect</span></a>
+                <a href="presskit/app-store/tradeoff-appstore-09-watch.jpg"><img src="presskit/thumbs/appstore-09-watch.jpg" alt="Watch your growth add up." loading="lazy"><span>Watch</span></a>
+                <a href="presskit/app-store/tradeoff-appstore-10-build.jpg"><img src="presskit/thumbs/appstore-10-build.jpg" alt="Build habits that stick." loading="lazy"><span>Build</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="kit" id="logos">
+        <div class="container">
+            <h2>Logos and art</h2>
+            <div class="assets">
+                <div class="asset">
+                    <div class="art"><img src="presskit/logo/tradeoff-app-icon-1024.png" width="160" height="160" alt="Tradeoff app icon"></div>
+                    <div class="body">
+                        <h3>App icon</h3>
+                        <p>1024 × 1024, PNG</p>
+                        <a href="presskit/logo/tradeoff-app-icon-1024.png" download>Download</a>
+                    </div>
+                </div>
+                <div class="asset">
+                    <div class="art"><img src="presskit/logo/tradeoff-mark.svg" width="96" height="136" alt="Tradeoff mark"></div>
+                    <div class="body">
+                        <h3>Mark</h3>
+                        <p>Vector, SVG. For dark backgrounds.</p>
+                        <a href="presskit/logo/tradeoff-mark.svg" download>Download</a>
+                    </div>
+                </div>
+                <div class="asset">
+                    <div class="art"><img class="cover" src="presskit/thumbs/key-art.jpg" alt="A glass hourglass on dark dunes: jade sand at the top falls into gold sand at the bottom." loading="lazy"></div>
+                    <div class="body">
+                        <h3>Key art</h3>
+                        <p>1536 × 2752, JPG</p>
+                        <a href="presskit/logo/tradeoff-key-art-hourglass.jpg" download>Download</a>
+                    </div>
+                </div>
+            </div>
+            <p class="fine">The name is written Tradeoff: one word, capital T. Jade (#5BE3A6) stands for growth and gold (#FFBA4A) for fun. Please don't change the colors or proportions of the icon or the mark.</p>
+        </div>
+    </section>
+
+    <section class="kit" id="maker">
+        <div class="container">
+            <h2>Who makes it</h2>
+            <div class="maker">
+                <div class="copy-block">
+                    <p class="eyebrow">i6 Development</p>
+                    <p>Tradeoff is made by Ameen, a solo iOS developer and parent in Canada, under the name i6 Development. Before Tradeoff came Tic Lock, a screen time app for kids where learning apps earn time on games. Tradeoff takes the same trade to adults, who set their own rules.</p>
+                </div>
+                <div class="copy-block">
+                    <p class="eyebrow">In the founder's words</p>
+                    <p>&ldquo;I first built a screen time app for my kids, where learning apps earn time on games. Then I realized the same mechanism works for adults, so I built Tradeoff and tested it on myself and on my wife. My Spanish keeps improving, and my time on social media has gotten much better.&rdquo;</p>
+                    <p>&ldquo;I didn't want my phone taken away. I like my fun apps. I just wanted the apps that make me better to get their turn first.&rdquo;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="closing" id="contact">
+        <div class="container">
+            <img class="mark-glow" src="images/mark.svg" width="64" height="91" alt="">
+            <h2>Writing about Tradeoff?</h2>
+            <p>We're happy to answer questions, set up Premium for review, or share a TestFlight build.</p>
+            <a href="mailto:tradeoffapp@i6dev.ca?subject=Press%3A%20Tradeoff" class="button">tradeoffapp@i6dev.ca</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="logo"><img src="images/mark.svg" alt="">Tradeoff</a>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Use</a>
+                    <a href="support.html">Support</a>
+                    <a href="press.html">Press</a>
+                    <a href="mailto:tradeoffapp@i6dev.ca">Contact</a>
+                </div>
+            </div>
+            <div class="copyright">&copy; 2026 i6dev.ca. All rights reserved.</div>
+        </div>
+    </footer>
+
+</body>
+</html>
